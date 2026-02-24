@@ -1,0 +1,24 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Add contact email to enrollment form",
+  "requirements": [
+    {
+      "id": "REQ-12",
+      "summary": "Display the email address athletes@velocityhealthclinic.com prominently within the EnrollmentSection form area as a clickable mailto link styled consistently with the dark/amber theme",
+      "acceptanceCriteria": [
+        "The email address athletes@velocityhealthclinic.com is visibly displayed within the EnrollmentSection form area.",
+        "The email is rendered as a clickable mailto: link.",
+        "The email display is styled consistently with the existing dark/amber visual theme.",
+        "The rest of the form fields and submit button remain unchanged and functional."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/EnrollmentSection.tsx",
+          "operation": "modify",
+          "description": "Add a styled callout displaying the email address athletes@velocityhealthclinic.com as a clickable mailto: link within the form area. Position it as a visible 'Or email us directly at' line near the submit button or as a styled callout below the form fields. Use existing dark/amber theme tokens from the Tailwind configuration to ensure visual consistency. Preserve all existing form fields, validation logic, submission handling, and success state."
+        }
+      ]
+    }
+  ]
+}

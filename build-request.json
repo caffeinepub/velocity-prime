@@ -1,0 +1,43 @@
+{
+  "kind": "build_request",
+  "title": "Add contact email to enrollment form",
+  "projectName": "Velocity Prime",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-12",
+      "text": "In the EnrollmentSection component, display the email address athletes@velocityhealthclinic.com prominently on the inquiry/waitlist form — either as a visible 'Or email us directly at' line near the submit button or as a styled callout above or below the form fields — so prospective athletes can contact the clinic directly.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-3",
+          "msg-5"
+        ],
+        "quotes": [
+          "yes waitlist form to email us at athletes@velocityhealthclinic.com",
+          "add to form"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The email address athletes@velocityhealthclinic.com is visibly displayed within the EnrollmentSection form area.",
+        "The email is rendered as a clickable mailto: link.",
+        "The email display is styled consistently with the existing dark/amber visual theme.",
+        "The rest of the form fields and submit button remain unchanged and functional."
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not modify any files under frontend/src/hooks/ or frontend/src/components/ui.",
+    "No backend changes required — form submissions already persist to the backend canister.",
+    "Do not attempt to wire up email sending or SMTP; only display the address as a contact option."
+  ],
+  "nonGoals": [
+    "Automated email delivery or forwarding of form submissions to athletes@velocityhealthclinic.com.",
+    "Any changes to the backend schema or submitInquiry method.",
+    "Adding new form fields beyond what already exists."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

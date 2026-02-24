@@ -1,0 +1,160 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 5,
+  "summary": "Velocity Prime is a precision sports medicine web app/marketing site for a 6-month concierge performance health program targeting high-performance age-group endurance athletes. The program combines comprehensive diagnostics (blood panels, Springbok MRI, DUTCH hormone test, sleep study, micronutrient panel, GI-MAP, CCTA cardiac screening, EKG), three physician visits, continuous wearable monitoring (Garmin/Whoop/Oura/Apple Watch), weekly data reviews, and targeted interventions (hormone therapy, peptides, nutrition, sleep protocols). Program cost is $12,000 for 6 months. Includes access to stem cell therapy partners in the Bahamas and US.",
+  "architectural_notes": [
+    "Single-product concierge medical program ($12,000/6 months) — site is primarily marketing/informational with enrollment CTA",
+    "Program targets age-group endurance athletes (triathletes, runners, cyclists) who train at high volume",
+    "Wearable integrations referenced: Garmin, Whoop, Oura, Apple Watch — monitoring is human-reviewed weekly, not automated",
+    "Stem cell therapy offered via partner clinics in Bahamas and US locations (preferred access model, not in-house)",
+    "Enrollment/waitlist form displays athletes@velocityhealthclinic.com; submissions stored in backend (email delivery disabled until paid plan upgrade)"
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-create-a-hero-section-at-the-top-of-the-landing-page-with-the-brand-name-velocity-prime-the-tagline-precision-sports-medicine-for-high-performance-athletes-a-compelling-one-line-hook-drawn-from-the-problem-statement-and-a-prominent-call-to-action-button-apply-for-the-program-that-scrolls-to-the-contact-enrollment-section",
+      "title": "Create a hero section at the top of the landing page with the brand name 'Velocity Prime', the tagline 'Precision Sports Medicine for High-Performance Athletes', a compelling one-line hook drawn from the problem statement, and a prominent call-to-action button ('Apply for the Program') that scrolls to the contact/enrollment section.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-the-problem-we-re-solving-section-that-articulates-the-gap-faced-by-age-group-endurance-athletes-overtraining-nutrient-deficiencies-poor-sleep-immune-suppression-and-undetected-cardiac-risk-use-the-content-from-the-brief-verbatim-or-closely-paraphrased-emphasize-that-elite-athletes-have-medical-teams-age-groupers-don-t",
+      "title": "Build a 'The Problem We're Solving' section that articulates the gap faced by age-group endurance athletes: overtraining, nutrient deficiencies, poor sleep, immune suppression, and undetected cardiac risk. Use the content from the brief verbatim or closely paraphrased. Emphasize that elite athletes have medical teams; age-groupers don't.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-what-we-do-section-with-a-concise-value-proposition-coaching-builds-the-engine-velocity-prime-ensures-the-physiology-can-handle-the-demands-include-the-three-program-pillars-1-establish-baseline-2-continuous-monitoring-3-intervention-to-peak-performance",
+      "title": "Build a 'What We Do' section with a concise value proposition: coaching builds the engine; Velocity Prime ensures the physiology can handle the demands. Include the three program pillars: (1) establish baseline, (2) continuous monitoring, (3) intervention to peak performance.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-the-timeline-section-as-a-visual-step-by-step-journey-showing-1-baseline-assessment-full-diagnostic-workup-including-cardiac-hormones-sleep-gut-health-2-kickoff-visit-60-90-min-data-review-and-prime-directives-action-plan-3-ongoing-monitoring-months-1-6-weekly-wearable-data-reviews-and-guidance-4-mid-cycle-check-month-3-second-physician-visit-bloodwork-rerun-recalibration-5-final-check-month-6-third-visit-final-bloodwork-after-action-report-for-next-training-cycle",
+      "title": "Build a 'The Timeline' section as a visual step-by-step journey showing: (1) Baseline Assessment — full diagnostic workup including cardiac, hormones, sleep, gut health; (2) Kickoff Visit (60–90 min) — data review and Prime Directives action plan; (3) Ongoing Monitoring (Months 1–6) — weekly wearable data reviews and guidance; (4) Mid-Cycle Check (Month 3) — second physician visit, bloodwork rerun, recalibration; (5) Final Check (Month 6) — third visit, final bloodwork, After Action Report for next training cycle.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-what-we-re-actually-testing-section-presenting-all-diagnostics-in-a-visually-scannable-format-e-g-cards-or-a-styled-table-include-comprehensive-blood-panel-3-baseline-month-3-month-6-springbok-mri-body-composition-muscle-quality-injury-risk-dutch-test-full-hormone-picture-cortisol-patterns-sleep-study-sleep-architecture-apnea-risk-micronutrient-panel-catches-deficiencies-basic-bloodwork-misses-gi-map-gut-health-absorption-inflammation-microbiome-ccta-for-cardiac-readiness-non-invasive-coronary-artery-scan-wearable-integration-garmin-whoop-oura-apple-watch-weekly-data-review-each-entry-must-include-the-test-name-and-a-brief-why-it-matters-explanation",
+      "title": "Build a 'What We're Actually Testing' section presenting all diagnostics in a visually scannable format (e.g., cards or a styled table). Include: Comprehensive Blood Panel (3×: Baseline, Month 3, Month 6), Springbok MRI (body composition, muscle quality, injury risk), DUTCH Test (full hormone picture, cortisol patterns), Sleep Study (sleep architecture, apnea risk), Micronutrient Panel (catches deficiencies basic bloodwork misses), GI-MAP (gut health, absorption, inflammation, microbiome), CCTA for Cardiac Readiness (non-invasive coronary artery scan), Wearable Integration (Garmin/Whoop/Oura/Apple Watch weekly data review). Each entry must include the test name and a brief 'Why It Matters' explanation.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-what-we-re-watching-for-section-presenting-eight-monitoring-focus-areas-as-expandable-cards-or-icon-driven-feature-blocks-sleep-recovery-nutrient-deficiencies-hormone-and-tissue-optimization-including-peptides-bpc-157-thymosin-beta-4-growth-hormone-secretagogues-mitochondrial-function-energy-production-overtraining-signals-immune-function-gi-issues-and-training-load-vs-recovery-capacity-each-block-should-include-a-short-headline-and-2-3-sentence-explanation-drawn-from-the-brief",
+      "title": "Build a 'What We're Watching For' section presenting eight monitoring focus areas as expandable cards or icon-driven feature blocks: Sleep & Recovery, Nutrient Deficiencies, Hormone and Tissue Optimization (including peptides BPC-157, thymosin beta-4, growth hormone secretagogues), Mitochondrial Function & Energy Production, Overtraining Signals, Immune Function, GI Issues, and Training Load vs. Recovery Capacity. Each block should include a short headline and 2–3 sentence explanation drawn from the brief.",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-program-pricing-section-clearly-displaying-12-000-for-6-months-with-a-full-bullet-point-inclusions-list-all-diagnostic-testing-three-comprehensive-physician-visits-with-intravisit-text-email-access-three-blood-draws-with-serial-analysis-springbok-mri-dutch-hormone-panel-sleep-study-micronutrient-testing-gi-map-gut-health-test-continuous-wearable-monitoring-weekly-plan-adjustments-ongoing-medical-support-peptide-and-hormone-therapy-recommendations-when-indicated-note-pharmacy-cost-is-additional-ccta-and-ekg-for-complete-cardiac-prescreening-include-a-cta-button-linking-to-the-enrollment-contact-section",
+      "title": "Build a 'Program Pricing' section clearly displaying: $12,000 for 6 months, with a full bullet-point inclusions list: all diagnostic testing, three comprehensive physician visits (with intravisit text/email access), three blood draws with serial analysis, Springbok MRI, DUTCH hormone panel, sleep study, micronutrient testing, GI-MAP gut health test, continuous wearable monitoring, weekly plan adjustments, ongoing medical support, peptide and hormone therapy recommendations when indicated (note: pharmacy cost is additional), CCTA and EKG for complete cardiac prescreening. Include a CTA button linking to the enrollment/contact section.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-an-faq-section-with-accordion-style-expandable-entries-for-1-i-already-have-a-coach-why-would-i-need-this-2-how-is-this-different-from-my-regular-doctor-3-what-exactly-am-i-paying-for-4-are-peptides-and-hormones-safe-5-what-about-stem-cells-or-other-similar-therapies-6-what-about-cardiac-screening-7-how-does-the-weekly-monitoring-actually-work-8-do-i-really-need-all-these-tests-use-the-answer-copy-from-the-brief-for-each-entry",
+      "title": "Build an FAQ section with accordion-style expandable entries for: (1) 'I already have a coach. Why would I need this?' (2) 'How is this different from my regular doctor?' (3) 'What exactly am I paying for?' (4) 'Are peptides and hormones safe?' (5) 'What about stem cells or other similar therapies?' (6) 'What about cardiac screening?' (7) 'How does the weekly monitoring actually work?' (8) 'Do I really need all these tests?' Use the answer copy from the brief for each entry.",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-an-enrollment-contact-section-at-the-bottom-of-the-page-with-a-heading-like-ready-to-train-with-confidence-a-short-motivational-subline-and-a-simple-inquiry-form-with-fields-name-email-phone-optional-wearable-device-dropdown-garmin-whoop-oura-apple-watch-other-primary-sport-event-text-and-a-message-how-did-you-hear-about-us-field-include-a-submit-button-form-submissions-should-be-stored-in-the-backend",
+      "title": "Build an enrollment/contact section at the bottom of the page with a heading like 'Ready to Train With Confidence?', a short motivational subline, and a simple inquiry form with fields: Name, Email, Phone (optional), Wearable Device (dropdown: Garmin, Whoop, Oura, Apple Watch, Other), Primary Sport/Event (text), and a Message/How did you hear about us field. Include a submit button. Form submissions should be stored in the backend.",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-sticky-top-navigation-bar-with-the-velocity-prime-logo-wordmark-on-the-left-and-anchor-links-on-the-right-program-testing-timeline-pricing-faq-and-a-highlighted-apply-cta-button-that-scrolls-to-the-enrollment-section",
+      "title": "Implement a sticky top navigation bar with the Velocity Prime logo/wordmark on the left and anchor links on the right: 'Program', 'Testing', 'Timeline', 'Pricing', 'FAQ', and a highlighted 'Apply' CTA button that scrolls to the enrollment section.",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-a-bold-high-performance-visual-theme-throughout-the-site-dark-charcoal-near-black-backgrounds-with-high-contrast-white-and-warm-amber-orange-gold-accent-colors-clean-sans-serif-typography-with-strong-weight-hierarchy-tight-athletic-aesthetic-reminiscent-of-elite-endurance-sport-branding-use-the-generated-hero-and-feature-images-as-visual-anchors-ensure-the-design-is-consistent-across-all-sections-and-fully-responsive-for-mobile-and-desktop",
+      "title": "Apply a bold, high-performance visual theme throughout the site: dark charcoal/near-black backgrounds with high-contrast white and warm amber/orange-gold accent colors, clean sans-serif typography with strong weight hierarchy, tight athletic aesthetic reminiscent of elite endurance sport branding. Use the generated hero and feature images as visual anchors. Ensure the design is consistent across all sections and fully responsive for mobile and desktop.",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-in-the-enrollmentsection-component-display-the-email-address-athletes-velocityhealthclinic-com-prominently-on-the-inquiry-waitlist-form-either-as-a-visible-or-email-us-directly-at-line-near-the-submit-button-or-as-a-styled-callout-above-or-below-the-form-fields-so-prospective-athletes-can-contact-the-clinic-directly",
+      "title": "In the EnrollmentSection component, display the email address athletes@velocityhealthclinic.com prominently on the inquiry/waitlist form — either as a visible 'Or email us directly at' line near the submit button or as a styled callout above or below the form fields — so prospective athletes can contact the clinic directly.",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Marketing/landing page presenting the Velocity Prime program overview, problem statement, and value proposition",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Program timeline section showing Baseline Assessment, Kickoff Visit, Months 1-6 monitoring, Month 3 mid-cycle check, and Month 6 final check",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Diagnostics/testing breakdown section with all tests (blood panel, Springbok MRI, DUTCH, sleep study, micronutrient, GI-MAP, CCTA, wearable integration) and why each matters",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "What We're Watching For section covering sleep/recovery, nutrient deficiencies, hormone optimization, mitochondrial function, overtraining, immune function, GI issues, training load vs recovery",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "FAQ section addressing common questions (coach compatibility, difference from PCP, cost breakdown, peptide/hormone safety, stem cell access, cardiac screening, weekly monitoring, testing necessity)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Program pricing section clearly displaying $12,000 / 6-month cost with full inclusions list",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-7",
+      "summary": "Call-to-action / enrollment / contact section for prospective athletes to get started",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Velocity Prime",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

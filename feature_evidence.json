@@ -1,0 +1,24 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-in-the-enrollmentsection-component-display-the-email-address-athletes-velocityhealthclinic-com-prominently-on-the-inquiry-waitlist-form-either-as-a-visible-or-email-us-directly-at-line-near-the-submit-button-or-as-a-styled-callout-above-or-below-the-form-fields-so-prospective-athletes-can-contact-the-clinic-directly",
+      "featureTitle": "In the EnrollmentSection component, display the email address athletes@velocityhealthclinic.com prominently on the inquiry/waitlist form — either as a visible 'Or email us directly at' line near the submit button or as a styled callout above or below the form fields — so prospective athletes can contact the clinic directly.",
+      "files": [
+        "frontend/src/components/EnrollmentSection.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-12"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

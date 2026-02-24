@@ -1,0 +1,17 @@
+{
+  "frontend/src/index.css": "Global styles implementing the Velocity Prime dark athletic theme with OKLCH color tokens, Barlow/Barlow Condensed fonts, and utility classes for the site's design system.",
+  "frontend/tailwind.config.js": "Extended Tailwind config with Velocity Prime brand color tokens (vp-amber, vp-dark variants, vp-white variants), Barlow font families, custom shadows (amber-glow), and animation keyframes.",
+  "frontend/src/hooks/useQueries.ts": "React Query mutation hook for submitting enrollment inquiries to the backend canister via the submitInquiry actor method.",
+  "frontend/src/components/Navigation.tsx": "Sticky top navigation with Velocity Prime logo, anchor scroll links, amber Apply CTA button, and mobile hamburger menu with sheet overlay.",
+  "frontend/src/components/HeroSection.tsx": "Full-viewport hero section with hero banner background image, brand name, tagline, hook copy, dual CTA buttons, and animated stats strip.",
+  "frontend/src/components/ProblemSection.tsx": "Problem statement section presenting six key athlete health gaps (overtraining, deficiencies, sleep, immune, cardiac, no medical team) as icon-driven cards with a callout quote.",
+  "frontend/src/components/ValuePropositionSection.tsx": "\"What We Do\" section with core value proposition headline and three numbered program pillars (Baseline, Monitoring, Intervention) as hover-interactive cards.",
+  "frontend/src/components/TimelineSection.tsx": "Five-step program timeline displayed as an alternating left-right connected flow over the timeline background image, with phase labels and descriptions.",
+  "frontend/src/components/DiagnosticsSection.tsx": "All eight diagnostics presented as scannable cards with badge labels, plus a feature image and a dedicated cardiac/CCTA highlight section with the cardiac image.",
+  "frontend/src/components/MonitoringSection.tsx": "Eight monitoring focus areas (sleep, nutrients, hormones, mitochondria, overtraining, immune, GI, training load) displayed in a responsive 4-column icon-driven grid.",
+  "frontend/src/components/PricingSection.tsx": "Pricing section with prominent $12,000/6-month display, full inclusions checklist, pharmacy cost caveat, and amber CTA button linking to the enrollment section.",
+  "frontend/src/components/FAQSection.tsx": "Eight FAQ entries using shadcn/ui Accordion component, collapsed by default, with full answer copy from the brief.",
+  "frontend/src/components/EnrollmentSection.tsx": "Enrollment inquiry form with name, email, phone, wearable dropdown, primary sport, and message fields; validates required fields and submits to backend via useSubmitInquiry mutation with success state. Now includes a styled \"email us directly\" callout below the submit button displaying athletes@velocityhealthclinic.com as a clickable mailto link with amber theming.",
+  "frontend/src/components/Footer.tsx": "Site footer with logo, anchor navigation links, copyright year, and caffeine.ai attribution with UTM tracking.",
+  "frontend/src/App.tsx": "Root application component composing all page sections in order with Navigation and Footer, no routing needed for this single-page marketing site."
+}
