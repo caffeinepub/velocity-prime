@@ -82,10 +82,10 @@ export default function EnrollmentSection() {
         <div className="max-w-2xl mx-auto">
           {/* Header */}
           <div className="text-center mb-10">
-            <span className="text-vp-amber font-display text-sm uppercase tracking-[0.25em] font-600">
+            <span className="text-vp-amber font-display text-sm uppercase tracking-[0.25em] font-semibold">
               Get Started
             </span>
-            <h2 className="font-display font-800 text-4xl md:text-5xl uppercase text-vp-white mt-3 mb-4 leading-tight">
+            <h2 className="font-display font-extrabold text-4xl md:text-5xl uppercase text-vp-white mt-3 mb-4 leading-tight">
               Ready to Train<br />
               <span className="text-vp-amber">With Confidence?</span>
             </h2>
@@ -95,9 +95,9 @@ export default function EnrollmentSection() {
           </div>
 
           {submitted ? (
-            <div className="bg-vp-dark-3 border border-vp-amber/40 rounded-2xl p-10 text-center shadow-amber-glow">
+            <div className="bg-vp-dark-3 border border-vp-amber rounded-2xl p-10 text-center shadow-amber-glow" style={{ borderColor: 'oklch(0.78 0.16 68 / 0.4)' }}>
               <CheckCircle size={48} className="text-vp-amber mx-auto mb-4" />
-              <h3 className="font-display font-800 text-2xl uppercase text-vp-white mb-3">
+              <h3 className="font-display font-extrabold text-2xl uppercase text-vp-white mb-3">
                 Application Received
               </h3>
               <p className="text-vp-white-muted leading-relaxed">
@@ -105,7 +105,7 @@ export default function EnrollmentSection() {
               </p>
               <button
                 onClick={() => setSubmitted(false)}
-                className="mt-6 text-vp-amber text-sm font-display font-600 uppercase tracking-wider hover:text-vp-amber-light transition-colors"
+                className="mt-6 text-vp-amber text-sm font-display font-semibold uppercase tracking-wider hover:text-vp-amber-light transition-colors"
               >
                 Submit Another Inquiry
               </button>
@@ -125,7 +125,7 @@ export default function EnrollmentSection() {
                   value={form.name}
                   onChange={(e) => handleChange('name', e.target.value)}
                   placeholder="Your full name"
-                  className="bg-vp-dark-4 border-vp-dark-border text-vp-white placeholder:text-vp-white-dim focus:border-vp-amber focus:ring-vp-amber/20"
+                  className="bg-vp-dark-4 border-vp-dark-border text-vp-white placeholder:text-vp-white-dim focus:border-vp-amber focus:ring-vp-amber"
                 />
                 {errors.name && <p className="text-red-400 text-xs">{errors.name}</p>}
               </div>
@@ -141,7 +141,7 @@ export default function EnrollmentSection() {
                   value={form.email}
                   onChange={(e) => handleChange('email', e.target.value)}
                   placeholder="you@example.com"
-                  className="bg-vp-dark-4 border-vp-dark-border text-vp-white placeholder:text-vp-white-dim focus:border-vp-amber focus:ring-vp-amber/20"
+                  className="bg-vp-dark-4 border-vp-dark-border text-vp-white placeholder:text-vp-white-dim focus:border-vp-amber focus:ring-vp-amber"
                 />
                 {errors.email && <p className="text-red-400 text-xs">{errors.email}</p>}
               </div>
@@ -157,7 +157,7 @@ export default function EnrollmentSection() {
                   value={form.phone}
                   onChange={(e) => handleChange('phone', e.target.value)}
                   placeholder="+1 (555) 000-0000"
-                  className="bg-vp-dark-4 border-vp-dark-border text-vp-white placeholder:text-vp-white-dim focus:border-vp-amber focus:ring-vp-amber/20"
+                  className="bg-vp-dark-4 border-vp-dark-border text-vp-white placeholder:text-vp-white-dim focus:border-vp-amber focus:ring-vp-amber"
                 />
               </div>
 
@@ -170,7 +170,7 @@ export default function EnrollmentSection() {
                   value={form.wearableDevice}
                   onValueChange={(val) => handleChange('wearableDevice', val)}
                 >
-                  <SelectTrigger className="bg-vp-dark-4 border-vp-dark-border text-vp-white focus:border-vp-amber focus:ring-vp-amber/20">
+                  <SelectTrigger className="bg-vp-dark-4 border-vp-dark-border text-vp-white focus:border-vp-amber focus:ring-vp-amber">
                     <SelectValue placeholder="Select your wearable" />
                   </SelectTrigger>
                   <SelectContent className="bg-vp-dark-3 border-vp-dark-border text-vp-white">
@@ -194,7 +194,7 @@ export default function EnrollmentSection() {
                   value={form.primarySport}
                   onChange={(e) => handleChange('primarySport', e.target.value)}
                   placeholder="e.g. Ironman Triathlon, Marathon, Cycling"
-                  className="bg-vp-dark-4 border-vp-dark-border text-vp-white placeholder:text-vp-white-dim focus:border-vp-amber focus:ring-vp-amber/20"
+                  className="bg-vp-dark-4 border-vp-dark-border text-vp-white placeholder:text-vp-white-dim focus:border-vp-amber focus:ring-vp-amber"
                 />
                 {errors.primarySport && <p className="text-red-400 text-xs">{errors.primarySport}</p>}
               </div>
@@ -210,7 +210,7 @@ export default function EnrollmentSection() {
                   onChange={(e) => handleChange('message', e.target.value)}
                   placeholder="Tell us about your training, your goal race, and how you heard about Velocity Prime..."
                   rows={4}
-                  className="bg-vp-dark-4 border-vp-dark-border text-vp-white placeholder:text-vp-white-dim focus:border-vp-amber focus:ring-vp-amber/20 resize-none"
+                  className="bg-vp-dark-4 border-vp-dark-border text-vp-white placeholder:text-vp-white-dim focus:border-vp-amber focus:ring-vp-amber resize-none"
                 />
                 {errors.message && <p className="text-red-400 text-xs">{errors.message}</p>}
               </div>
@@ -219,7 +219,7 @@ export default function EnrollmentSection() {
               <button
                 type="submit"
                 disabled={isPending}
-                className="w-full py-4 bg-vp-amber text-vp-dark font-display font-800 text-base uppercase tracking-widest rounded hover:bg-vp-amber-light transition-all shadow-amber-glow-sm hover:shadow-amber-glow disabled:opacity-60 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+                className="w-full py-4 bg-vp-amber text-vp-dark font-display font-extrabold text-base uppercase tracking-widest rounded hover:bg-vp-amber-light transition-all shadow-amber-glow-sm hover:shadow-amber-glow disabled:opacity-60 disabled:cursor-not-allowed flex items-center justify-center gap-2"
               >
                 {isPending ? (
                   <>
@@ -230,24 +230,28 @@ export default function EnrollmentSection() {
                   'Submit Application'
                 )}
               </button>
-
-              {/* Direct email callout */}
-              <div className="flex items-center gap-3 pt-1 border-t border-vp-dark-border">
-                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-vp-amber/10 border border-vp-amber/30 flex items-center justify-center">
-                  <Mail size={14} className="text-vp-amber" />
-                </div>
-                <p className="text-vp-white-muted text-sm leading-snug">
-                  Prefer to reach us directly?{' '}
-                  <a
-                    href="mailto:athletes@velocityhealthclinic.com"
-                    className="text-vp-amber font-600 hover:text-vp-amber-light transition-colors underline underline-offset-2 decoration-vp-amber/40 hover:decoration-vp-amber-light"
-                  >
-                    athletes@velocityhealthclinic.com
-                  </a>
-                </p>
-              </div>
             </form>
           )}
+
+          {/* Direct email callout — always visible regardless of form state */}
+          <div className="mt-6 flex items-center gap-3 p-4 rounded-xl border" style={{ backgroundColor: 'oklch(0.20 0.008 260)', borderColor: 'oklch(0.78 0.16 68 / 0.3)' }}>
+            <div
+              className="flex-shrink-0 w-9 h-9 rounded-full flex items-center justify-center"
+              style={{ backgroundColor: 'oklch(0.78 0.16 68 / 0.12)', border: '1px solid oklch(0.78 0.16 68 / 0.35)' }}
+            >
+              <Mail size={15} className="text-vp-amber" />
+            </div>
+            <p className="text-vp-white-muted text-sm leading-snug">
+              Prefer to reach us directly?{' '}
+              <a
+                href="mailto:athletes@velocityhealthclinic.com"
+                className="text-vp-amber font-semibold hover:text-vp-amber-light transition-colors underline underline-offset-2"
+                style={{ textDecorationColor: 'oklch(0.78 0.16 68 / 0.5)' }}
+              >
+                athletes@velocityhealthclinic.com
+              </a>
+            </p>
+          </div>
         </div>
       </div>
     </section>

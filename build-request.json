@@ -1,40 +1,38 @@
 {
   "kind": "build_request",
-  "title": "Add contact email to enrollment form",
+  "title": "Fix email address not displaying in EnrollmentSection",
   "projectName": "Velocity Prime",
-  "priority": "normal",
+  "priority": "high",
   "requirements": [
     {
-      "id": "REQ-12",
-      "text": "In the EnrollmentSection component, display the email address athletes@velocityhealthclinic.com prominently on the inquiry/waitlist form — either as a visible 'Or email us directly at' line near the submit button or as a styled callout above or below the form fields — so prospective athletes can contact the clinic directly.",
+      "id": "REQ-13",
+      "text": "In the EnrollmentSection component, ensure the email address athletes@velocityhealthclinic.com is visibly rendered on the page. Audit the component for any conditional rendering, CSS visibility issues, or logic that may be hiding the email callout, and fix it so the email appears prominently regardless of form state (idle, submitting, or success).",
       "target": "frontend",
       "source": {
         "messageIds": [
-          "msg-3",
-          "msg-5"
+          "msg-1"
         ],
         "quotes": [
-          "yes waitlist form to email us at athletes@velocityhealthclinic.com",
-          "add to form"
+          "not showing on web page"
         ]
       },
       "acceptanceCriteria": [
-        "The email address athletes@velocityhealthclinic.com is visibly displayed within the EnrollmentSection form area.",
-        "The email is rendered as a clickable mailto: link.",
-        "The email display is styled consistently with the existing dark/amber visual theme.",
-        "The rest of the form fields and submit button remain unchanged and functional."
+        "The email address athletes@velocityhealthclinic.com is visible on the enrollment section when the page first loads.",
+        "The email address remains visible in both the default form state and after a successful form submission.",
+        "The email is rendered as a clickable mailto link or clearly styled text callout.",
+        "No CSS properties (display:none, visibility:hidden, opacity:0, etc.) are hiding the email element.",
+        "The email callout is visible on both mobile and desktop screen sizes."
       ]
     }
   ],
   "constraints": [
-    "Do not modify any files under frontend/src/hooks/ or frontend/src/components/ui.",
-    "No backend changes required — form submissions already persist to the backend canister.",
-    "Do not attempt to wire up email sending or SMTP; only display the address as a contact option."
+    "Do not modify any files under frontend/src/hooks/ (immutable paths).",
+    "Do not alter the backend schema or inquiry submission logic."
   ],
   "nonGoals": [
-    "Automated email delivery or forwarding of form submissions to athletes@velocityhealthclinic.com.",
-    "Any changes to the backend schema or submitInquiry method.",
-    "Adding new form fields beyond what already exists."
+    "Adding new sections or features to the landing page.",
+    "Changing the form fields or submission flow.",
+    "Redesigning the EnrollmentSection layout beyond fixing the email visibility issue."
   ],
   "imageRequirements": {
     "required": [],

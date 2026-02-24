@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "projectStateVersion": 5,
+  "projectStateVersion": 7,
   "summary": "Velocity Prime is a precision sports medicine web app/marketing site for a 6-month concierge performance health program targeting high-performance age-group endurance athletes. The program combines comprehensive diagnostics (blood panels, Springbok MRI, DUTCH hormone test, sleep study, micronutrient panel, GI-MAP, CCTA cardiac screening, EKG), three physician visits, continuous wearable monitoring (Garmin/Whoop/Oura/Apple Watch), weekly data reviews, and targeted interventions (hormone therapy, peptides, nutrition, sleep protocols). Program cost is $12,000 for 6 months. Includes access to stem cell therapy partners in the Bahamas and US.",
   "architectural_notes": [
     "Single-product concierge medical program ($12,000/6 months) — site is primarily marketing/informational with enrollment CTA",
@@ -9,8 +9,10 @@
     "Stem cell therapy offered via partner clinics in Bahamas and US locations (preferred access model, not in-house)",
     "Enrollment/waitlist form displays athletes@velocityhealthclinic.com; submissions stored in backend (email delivery disabled until paid plan upgrade)"
   ],
-  "known_issues": [],
-  "isFixRequest": false,
+  "known_issues": [
+    "Email address athletes@velocityhealthclinic.com not displaying on the enrollment/contact section of the web page as expected"
+  ],
+  "isFixRequest": true,
   "existing_features": [
     {
       "id": "feature-create-a-hero-section-at-the-top-of-the-landing-page-with-the-brand-name-velocity-prime-the-tagline-precision-sports-medicine-for-high-performance-athletes-a-compelling-one-line-hook-drawn-from-the-problem-statement-and-a-prominent-call-to-action-button-apply-for-the-program-that-scrolls-to-the-contact-enrollment-section",
@@ -105,6 +107,14 @@
       "title": "In the EnrollmentSection component, display the email address athletes@velocityhealthclinic.com prominently on the inquiry/waitlist form — either as a visible 'Or email us directly at' line near the submit button or as a styled callout above or below the form fields — so prospective athletes can contact the clinic directly.",
       "reqIds": [
         "REQ-12"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-in-the-enrollmentsection-component-ensure-the-email-address-athletes-velocityhealthclinic-com-is-visibly-rendered-on-the-page-audit-the-component-for-any-conditional-rendering-css-visibility-issues-or-logic-that-may-be-hiding-the-email-callout-and-fix-it-so-the-email-appears-prominently-regardless-of-form-state-idle-submitting-or-success",
+      "title": "In the EnrollmentSection component, ensure the email address athletes@velocityhealthclinic.com is visibly rendered on the page. Audit the component for any conditional rendering, CSS visibility issues, or logic that may be hiding the email callout, and fix it so the email appears prominently regardless of form state (idle, submitting, or success).",
+      "reqIds": [
+        "REQ-13"
       ],
       "version": 1
     }

@@ -1,7 +1,7 @@
 {
   "kind": "coverage_report",
   "version": "1.0",
-  "generatedAt": "2026-02-24T13:25:32.490Z",
+  "generatedAt": "2026-02-24T13:41:17.371Z",
   "sources": {
     "buildRequest": true,
     "implementationPlan": true
@@ -11,8 +11,8 @@
     "implemented": 1,
     "items": [
       {
-        "id": "REQ-12",
-        "summary": "In the EnrollmentSection component, display the email address athletes@velocityhealthclinic.com prominently on the inquiry/waitlist form — either as a visible 'Or email us directly at' line near the submit button or as a styled callout above or below the form fields — so prospective athletes can contact the clinic directly.",
+        "id": "REQ-13",
+        "summary": "In the EnrollmentSection component, ensure the email address athletes@velocityhealthclinic.com is visibly rendered on the page. Audit the component for any conditional rendering, CSS visibility issues, or logic that may be hiding the email callout, and fix it so the email appears prominently regardless of form state (idle, submitting, or success).",
         "status": "implemented",
         "plannedFiles": [
           "frontend/src/components/EnrollmentSection.tsx"
@@ -25,7 +25,6 @@
   },
   "changedFiles": [
     "build-request.json",
-    "build-template/README.md",
     "feature_evidence.json",
     "frontend-file-summaries.txt",
     "frontend-implementation-plan.json",

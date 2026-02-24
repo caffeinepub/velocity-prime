@@ -1,11 +1,11 @@
 {
   "kind": "spec_vs_diff_report",
   "version": "1.0",
-  "generatedAt": "2026-02-24T13:25:32.487Z",
-  "summary": "REQ-12 appears to be implemented in the EnrollmentSection component. The diff shows the component was modified to include a styled 'email us directly' callout with athletes@velocityhealthclinic.com as a clickable mailto link using amber theming, consistent with the existing dark/amber visual theme. The file summary explicitly confirms this. The form fields and submit button remain unchanged. All four acceptance criteria appear to be satisfied.",
+  "generatedAt": "2026-02-24T13:41:17.367Z",
+  "summary": "The diff modifies EnrollmentSection.tsx to move the email callout (athletes@velocityhealthclinic.com) outside the conditional form/success block so it is always visible. The file-diff summary explicitly confirms this fix. All acceptance criteria for REQ-13 appear to be addressed: the email is always rendered regardless of form state, uses inline styles to ensure visibility, and is present in both idle and submitted states.",
   "missing_requirements": [],
   "hallucinated_features": [],
-  "confidence": 0.92,
+  "confidence": 0.9,
   "changed_files": [
     "frontend-file-summaries.txt",
     "frontend/src/components/EnrollmentSection.tsx",

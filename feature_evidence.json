@@ -2,8 +2,8 @@
   "kind": "feature_evidence_report",
   "features": [
     {
-      "featureId": "feature-in-the-enrollmentsection-component-display-the-email-address-athletes-velocityhealthclinic-com-prominently-on-the-inquiry-waitlist-form-either-as-a-visible-or-email-us-directly-at-line-near-the-submit-button-or-as-a-styled-callout-above-or-below-the-form-fields-so-prospective-athletes-can-contact-the-clinic-directly",
-      "featureTitle": "In the EnrollmentSection component, display the email address athletes@velocityhealthclinic.com prominently on the inquiry/waitlist form — either as a visible 'Or email us directly at' line near the submit button or as a styled callout above or below the form fields — so prospective athletes can contact the clinic directly.",
+      "featureId": "feature-in-the-enrollmentsection-component-ensure-the-email-address-athletes-velocityhealthclinic-com-is-visibly-rendered-on-the-page-audit-the-component-for-any-conditional-rendering-css-visibility-issues-or-logic-that-may-be-hiding-the-email-callout-and-fix-it-so-the-email-appears-prominently-regardless-of-form-state-idle-submitting-or-success",
+      "featureTitle": "In the EnrollmentSection component, ensure the email address athletes@velocityhealthclinic.com is visibly rendered on the page. Audit the component for any conditional rendering, CSS visibility issues, or logic that may be hiding the email callout, and fix it so the email appears prominently regardless of form state (idle, submitting, or success).",
       "files": [
         "frontend/src/components/EnrollmentSection.tsx"
       ],
@@ -16,7 +16,7 @@
         "github-export-icp-cli@1.0.0"
       ],
       "testIds": [
-        "REQ-12"
+        "REQ-13"
       ],
       "confidence": "high"
     }

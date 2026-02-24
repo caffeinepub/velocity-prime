@@ -1,22 +1,23 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Add contact email to enrollment form",
+  "title": "Fix email address not displaying in EnrollmentSection",
   "requirements": [
     {
-      "id": "REQ-12",
-      "summary": "Display the email address athletes@velocityhealthclinic.com prominently within the EnrollmentSection form area as a clickable mailto link styled consistently with the dark/amber theme",
+      "id": "REQ-13",
+      "summary": "Fix email address athletes@velocityhealthclinic.com visibility in EnrollmentSection component by auditing and resolving conditional rendering, CSS visibility issues, or logic that may be hiding the email callout",
       "acceptanceCriteria": [
-        "The email address athletes@velocityhealthclinic.com is visibly displayed within the EnrollmentSection form area.",
-        "The email is rendered as a clickable mailto: link.",
-        "The email display is styled consistently with the existing dark/amber visual theme.",
-        "The rest of the form fields and submit button remain unchanged and functional."
+        "The email address athletes@velocityhealthclinic.com is visible on the enrollment section when the page first loads.",
+        "The email address remains visible in both the default form state and after a successful form submission.",
+        "The email is rendered as a clickable mailto link or clearly styled text callout.",
+        "No CSS properties (display:none, visibility:hidden, opacity:0, etc.) are hiding the email element.",
+        "The email callout is visible on both mobile and desktop screen sizes."
       ],
       "file_operations": [
         {
           "path": "frontend/src/components/EnrollmentSection.tsx",
           "operation": "modify",
-          "description": "Add a styled callout displaying the email address athletes@velocityhealthclinic.com as a clickable mailto: link within the form area. Position it as a visible 'Or email us directly at' line near the submit button or as a styled callout below the form fields. Use existing dark/amber theme tokens from the Tailwind configuration to ensure visual consistency. Preserve all existing form fields, validation logic, submission handling, and success state."
+          "description": "Audit the EnrollmentSection component to identify and fix why the email address athletes@velocityhealthclinic.com is not visible. Review conditional rendering logic around form states (idle, submitting, success) to ensure the email callout is always rendered. Check for any CSS classes that might hide the element (hidden, invisible, opacity-0, sr-only, etc.). Ensure the email is rendered outside any conditional blocks tied to form submission state. Verify the mailto link or text callout has proper visibility styling and is not affected by parent container styles. Test that the email displays correctly on both mobile and desktop breakpoints."
         }
       ]
     }
